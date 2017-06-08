@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dil.login">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/stickers"
+        android:label="Soul Music"
+        android:roundIcon="@drawable/stickers"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login" />
+        <activity android:name=".ResultLogin" />
+        <activity android:name=".Signup" />
+        <activity android:name=".nextActivity" />
+        <activity android:name=".Listview" />
+        <!--
+            <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme">
+            </activity>
+        -->
+        <activity
+            android:name=".FlashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Dil">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Navigationplaylist"
+            android:label="@string/title_activity_navigationplaylist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CustomGridView"></activity>
+    </application>
+
+</manifest>
